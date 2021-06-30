@@ -9,7 +9,7 @@ $(window).on('beforeunload', function(){
 $('#active1').addClass("active");
 
 /*---Prevent hard jump on click of nav link---*/
-$(document).ready(function() {
+$(()=> {
 		$('a.nav-link[href*="#"]').bind('click', function(e) {
 			
 				e.preventDefault(); // prevent hard jump, the default behavior
@@ -28,9 +28,8 @@ $(document).ready(function() {
 });
 
 /*---To set navbar links active onClick or on scroll based on scroll height of that specific page---*/
-$(window).scroll(function() {
+$(window).scroll(()=>{
 		var scrollDistance = $(window).scrollTop()+5;
-
 		$('.thumbnail-common').each(function(i) {
 				if ($(this).position().top <= scrollDistance) {
 						$('#navbar1 a.active').removeClass('active border-bottom');
@@ -40,9 +39,8 @@ $(window).scroll(function() {
 }).scroll();
 
 /*----To add Navbar background color green when the scrollTop()>=1 or window width<=576----*/
-$(document).ready(function(){
-
-	$(window).scroll(function() {
+$(()=> {
+	$(window).scroll(()=>{
 	    if ($(window).scrollTop()>=1 || $(this).width()<=576){
 	    	$("#navbar1").addClass("nav-bg-color");
 		} else{
@@ -51,7 +49,7 @@ $(document).ready(function(){
 
 	});
 
-	$(window).resize(function(){
+	$(window).resize(()=>{
 		if ($(this).width()<=576){
 			$("#navbar1").addClass("nav-bg-color");
 		} else{
@@ -60,15 +58,13 @@ $(document).ready(function(){
 	});
 });
 
-
-
 /*To deactivate links and button, onClick event, page will not jump to the top*/
 $(".click-returnFalse").click(function(e){
 	e.preventDefault();
 });
 
 /*----Button on bottom right and position fixed to jump to the Top----*/
-$(document).ready(function() { 
+$(()=> { 
 	var offset = 20;	//px
 	var duration = 300;	 //millisecond
 	$(window).scroll(function() {

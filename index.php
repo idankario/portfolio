@@ -56,7 +56,6 @@
 			<div class="row">
 				<?php
 				foreach ($Software_engineering_works as $key => $row) {
-				
 					echo'<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="imagebox">
 								<a href="'.$row['href_link'].'" target="_blank">
@@ -124,12 +123,10 @@
 		</section>
 		<section></section>
 		<p class="pt-3 text-center">Handmade by Idan Kario Copyright &copy 2021</p>
-	</footer>
-	
+	</footer>	
 	<!-- partial -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.js'></script>
 	<script  src="js/EfectAndOpenFiles.js"></script>
-
 </body>
 </html>
