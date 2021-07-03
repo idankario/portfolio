@@ -15,11 +15,9 @@
   	<!-- nav -->
 	<nav id="navbar1" class="p-4 navbar navbar-expand-md fixed-top">
 		<span class="navbar-brand">IDAN KARIO</span>
-		<ul class="nav navbar-nav ">
-			<li class="nav-item"><a class="nav-link" id="active1" href="#Home">HOME</a></li>
-			<li class="nav-item"><a class="nav-link" id="active2" href="#Portfolio">MY WORKS</a></li>
-			<li class="nav-item"><a class="nav-link" id="active3" href="#Contact">CONTACT</a></li>
-		</ul>
+		<a class="nav-link" id="active1" href="#Home">HOME</a>
+		<a class="nav-link" id="active2" href="#Portfolio">MY WORKS</a>
+		<a class="nav-link" id="active3" href="#Contact">CONTACT</a>
 	</nav>
 	<!-- Home Page -->
 	<section id="Home" class="background-common flex-row flex-wrap" >
