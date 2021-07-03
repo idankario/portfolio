@@ -13,7 +13,6 @@
 ?>
 <body>
   	<!-- nav -->
-
 	<nav id="navbar1" class="p-4 navbar navbar-expand-md fixed-top">
 		<span class="navbar-brand">IDAN KARIO</span>
 		<div  id="nav-ul">
@@ -40,7 +39,7 @@
 			<em class="p-5">Languages and Frameworks:
 				Javascript(ES6), HTML5, Ajax, mysql, java, c, c++
 			</em>
-			<button type="button" class="btn btn-primary w-25" onclick="window.open('files/MyResume.pdf')">My Resume</button>
+			<button type="button" class="btn btn-primary" onclick="window.open('files/MyResume.pdf')">My Resume</button>
 		</article>
 	</section>
 	<!-- Portfolio Page -->
@@ -93,7 +92,7 @@
 				</div>
 				<button type="submit" class="btn btn-primary "><i class="fa fa-paper-plane fa-lg"></i></button>
 			</form>
-			<aside id="hide" >
+			<aside>
 				<p>Want to get in touch with me? Got a project you would like me to work on? Be it to request more info about myself or my experience, just feel free to drop me a line anytime.</p>
 			</aside>
 		</section>
