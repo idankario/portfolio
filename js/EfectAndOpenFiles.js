@@ -1,6 +1,6 @@
 
 /*On page refresh, scroll will be at the top*/
-$(window).on('beforeunload', function(){
+$(window).on('beforeunload', ()=>{
     $(window).scrollTop(0);
 });
 
@@ -11,15 +11,12 @@ $('#active1').addClass("active");
 /*---Prevent hard jump on click of nav link---*/
 $(()=> {
 		$('a.nav-link[href*="#"]').bind('click', function(e) {
-			
 				e.preventDefault(); // prevent hard jump, the default behavior
-
 				var target = $(this).attr("href"); // Set the target as variable
-
 				// perform animated scrolling by getting top-position of target-element and set it as scroll target
 				$('html, body').stop().animate({
 						scrollTop: $(target).offset().top
-				}, 600, function() {
+				}, 600, ()=> {
 						location.hash = target; //attach the hash (#jumptarget) to the page url
 				});
 
@@ -67,7 +64,7 @@ $(".click-returnFalse").click(function(e){
 $(()=> { 
 	var offset = 20;	//px
 	var duration = 300;	 //millisecond
-	$(window).scroll(function() {
+	$(window).scroll(()=> {
 
 		if ($(this).scrollTop() > offset) {
 			$("#back-to-top").fadeIn(duration);

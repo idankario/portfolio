@@ -73,7 +73,6 @@ nav{
 	background-image: url("../images/work.jpg");
   	background-color: #708090;
 }
-
 .imagebox{
 
 	height: 300px;
@@ -85,8 +84,6 @@ nav{
 	border-left: 4px solid #4F755B;	
 	margin-bottom: 25px;
 	box-shadow: 3px 3px 8px #000;
-
-
 }
 .imagebox:hover{
 	box-shadow: 6px 7px 15px #000;
@@ -173,6 +170,9 @@ nav{
 form div{
 	margin-top: 30px;
 }
+.fab{
+	margin-left: 10px;
+}
 /*-----------------------------*/
 /* footer*/
 /*-----------------------------*/
@@ -221,15 +221,9 @@ form +aside{
 	margin-top: 90px;
 	margin-left: 15%;
 	width: 40%;
-	font-size: 103%;
+	font-size: 27px;
 }
-@media (min-width: 576px){
-
-
-}
-
 @media (max-width: 576px){
-
 	#hiden{
 		display: none;
 		visibility: hidden;
