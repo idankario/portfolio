@@ -10,7 +10,7 @@
 .container{
 	padding: 0px;
 }
-header,article,nav,main,section{
+header,article,main,section{
 	display:flex;
 }
 a:link,a{
