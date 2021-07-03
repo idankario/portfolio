@@ -8,7 +8,5 @@
 	$query = "SELECT * FROM portfolio_IdanKario";
 	$Software_engineering_works = mysqli_query($connection, $query); 
 	if(!($Software_engineering_works))
-		die("DB connection failed");
-
-	
+		die("DB connection failed");	
 ?>

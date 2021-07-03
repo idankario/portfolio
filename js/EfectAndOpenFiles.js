@@ -30,7 +30,7 @@ $(()=> {
 /*---To set navbar links active onClick or on scroll based on scroll height of that specific page---*/
 $(window).scroll(()=>{
 		var scrollDistance = $(window).scrollTop()+5;
-		$('.thumbnail-common').each(function(i) {
+		$('.background-common').each(function(i) {
 				if ($(this).position().top <= scrollDistance) {
 						$('#navbar1 a.active').removeClass('active border-bottom');
 						$('.nav a').eq(i).addClass('active border-bottom');
